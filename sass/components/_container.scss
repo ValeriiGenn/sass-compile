@@ -1,0 +1,12 @@
+.container {
+    @media screen and (min-width: 1920px) {
+        width: 1920px;
+        //@at-root: 34px;
+        //padding-right: 34px;
+    }
+    width: 375px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}

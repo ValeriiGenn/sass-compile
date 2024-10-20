@@ -1,0 +1,84 @@
+.biography {
+  padding-bottom: 15px;
+  text-align: left;
+  font-size: 11px;
+  line-height: 16px;
+  background-image: url(../images/mob/Ell38-min.png),
+    url(../images/mob/Rec49-min.png), url(../images/mob/Ell61-min.png),
+    url(../images/mob/Ell60-min.png), url(../images/mob/Ell59-min.png),
+    url(../images/mob/Ell58-min.png), url(../images/mob/Ell57-min.png),
+    url(../images/mob/Ell56-min.png), url(../images/mob/Ell55-min.png),
+    url(../images/mob/Rec50-min.png), url(../images/mob/Ell62-min.png),
+    url(../images/mob/MGpivblackgreen-min.png), url(../images/mob/Ell63-min.png),
+    url(../images/mob/MGyellrott.png);
+  background-position: 0px 63px, 0px 63px, 8px 131px, 14px 136px, 19px 142px,
+    24px 146px, 28px 150px, 31px 153px, 34px 157px, 0px 118px, 0px 178px,
+    0px 220px, 6px 324px, 2px 385px;
+  background-repeat: no-repeat;
+
+  &__title {
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 12px;
+    color: var(--endtxt-color);
+    &::before {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      width: 50px;
+      height: 50px;
+      left: -30px;
+      bottom: -11px;
+      background-image: url(../images/mob/MGyellgre-min.png);
+      background-repeat: no-repeat;
+    }
+  }
+  &__greeting {
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+  }
+  &__introduction {
+    font-size: 12px;
+    line-height: 17px;
+    margin-left: 27px;
+    margin-bottom: 13px;
+  }
+  &__image {
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    width: 212px;
+    height: 211px;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 3px;
+    &--span {
+      font-weight: 600;
+      color: var(--blue-color);
+    }
+  }
+  &__text-a {
+    margin-bottom: 3px;
+  }
+  &__text-b {
+    margin-bottom: 3px;
+  }
+  &__text-c {
+    margin-bottom: 3px;
+  }
+  &__wrap {
+    position: relative;
+    width: 221px;
+    height: 220px;
+    margin-left: 27px;
+    margin-bottom: 10px;
+    border: 2px solid var(--yellou-color);
+  }
+}

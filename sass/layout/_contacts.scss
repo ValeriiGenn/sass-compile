@@ -1,0 +1,72 @@
+.contacts {
+  background-color: var(--bgcon-color);
+  //position: relative;
+  padding: 7px 0 21px 25px;
+  background-image: url(../images/mob/Rectangle63-min.png),
+    url(../images/mob/Rectangle66-min.png),
+    url(../images/mob/Rectangle66-min.png), url(../images/mob/imgloc1-min.png);
+  background-position: 123px -6px, 163px 198px, 200px 0px, 171px 32px;
+  background-size: 123px, 217px 32px, 184px, 206px;
+  background-repeat: no-repeat;
+  &__container {
+    width: 375px;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 7px;
+    &--text {
+      font-size: 12px;
+      line-height: 17px;
+      color: var(--black-color);
+      margin-right: 48px;
+    }
+  }
+  &__logo {
+    &--img {
+      width: 85px;
+      padding: 10px;
+      width: 65px;
+      margin-bottom: 5px;
+    }
+    &--use {
+      width: 40px;
+      height: 35px;
+    }
+    &--text {
+      font-size: 3px;
+      line-height: 4px;
+      //text-align: center;
+      text-transform: uppercase;
+      color: var(--black-color);
+    }
+  }
+  &__wrapp {
+    width: 115px;
+    margin-left: 15px;
+    padding-bottom: 56px;
+    //margin-bottom: 7px;
+  }
+  &__contact {
+    margin-bottom: 7px;
+  }
+  &__contact--link {
+    font-size: 12px;
+    line-height: 17px;
+    color: var(--white-color);
+  }
+  &__list-ellipse {
+    display: flex;
+    margin-bottom: 3px;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
+  }
+  &__text {
+    font-size: 12px;
+    line-height: 17px;
+    color: var(--white-color);
+  }
+}

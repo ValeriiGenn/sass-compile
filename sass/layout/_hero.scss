@@ -1,0 +1,132 @@
+.hero {
+  padding-top: 146px;
+  padding-bottom: 101px;
+  width: 375px;
+  margin: 0 auto;
+  //height: 220px;
+  &__overlay {
+    margin: 0 auto;
+    // position: relative;
+    background-image: url(../images/mob/Ellipse16-min.png),
+      url(../images/mob/Ellipse15-min.png), url(../images/mob/Ellipse14-min.png),
+      url(../images/mob/Ellipse13-min.png), url(../images/mob/Ellipse11-min.png),
+      url(../images/mob/Rectangle28-min.png),
+      url(../images/mob/Ellipse12-min.png),
+      url(../images/mob/Rectangle17-min.png), url(../images/mob/Group2-min.png),
+      url(../images/mob/Vector2-min.png), url(../images/mob/Vector1-min.png),
+      url(../images/mob/Ellipse23-min.png),
+      url(../images/mob/Rectangle29-min.png),
+      url(../images/mob/Rectangle29-min.png),
+      url(../images/mob/Rectangle29-min.png),
+      url(../images/mob/Rectangle29-min.png),
+      url(../images/mob/Rectangle29-min.png),
+      url(../images/mob/Rectangle29-min.png),
+      url(../images/mob/Rectangle29-min.png),
+      url(../images/mob/Rectangle29-min.png), url(../images/mob/Vector5-min.png),
+      url(../images/mob/Ellipse26-min.png), url(../images/mob/Vector10-min.png),
+      url(../images/mob/Vector9-min.png), url(../images/mob/Ellipse17-min.png),
+      url(../images/mob/Vector18-min.png), url(../images/mob/Vector12-min.png),
+      url(../images/mob/Vector15-min.png), url(../images/mob/Vector11-min.png),
+      url(../images/mob/Rectangle13-min.png), url(../images/mob/Group3-min.png),
+      url(../images/mob/Vector8-min.png), url(../images/mob/Vector6-min.png),
+      url(../images/mob/Vector14-min.png), url(../images/mob/Vector13-min.png),
+      url(../images/mob/Ellipse25-min.png), url(../images/mob/Ellipse27-min.png),
+      url(../images/mob/Vector17-min.png),
+      url(../images/mob/Rectangle37-min.png),
+      url(../images/mob/Vector16-min.png), url(../images/mob/MaskGroup-min.png),
+      url(../images/mob/Vector7-min.png), url(../images/mob/Vector4-min.png),
+      url(../images/mob/MaskGrouprigth-min.png),
+      url(../images/mob/Vector3-min.png);
+    background-position: 283px 102px, 297px 102px, 311px 102px, 325px 102px,
+      339px 102px, 337px 96px, 353px 102px, 372px 188px, 276px 221px,
+      310px 215px, 330px 198px, 1px 262px, -1px 140px, -1px 135px, -1px 130px,
+      -1px 125px, -1px 120px, -1px 115px, -1px 110px, -1px 105px, 19px 106px,
+      61px 108px, 191px 218px, 232px 115px, 275px 114px, 160px 138px,
+      215px 169px, 131px 200px, 305px 155px, 0px 182px, 145px 70px, 95px 95px,
+      229px 150px, 170px 214px, 117px 200px, 20px 87px, 0px 171px, 0px 140px,
+      118px 125px, 5px 230px, -1px 178px, 225px 75px, 310px 106px, 321px 124px,
+      356px 115px;
+    background-repeat: no-repeat;
+  }
+  &__container {
+    position: relative;
+    text-align: center;
+    //margin-left: auto;
+    //margin-right: auto;
+    width: 306px;
+    margin-left: 33px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 55px;
+      height: 31px;
+      right: 10px;
+      bottom: -104px;
+      background-image: url(../images/icons/MaskGroupm.svg);
+      background-repeat: no-repeat;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 55px;
+      height: 31px;
+      right: 10px;
+      bottom: -80px;
+      background-image: url(../images/icons/MaskGrouptopm.svg);
+      background-repeat: no-repeat;
+    }
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px var(--h1-color);
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 -16px 0 var(--shadtitle-color);
+    margin-bottom: 63px;
+    &--end {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 116%;
+      text-align: center;
+      color: var(--endtxt-color);
+      margin-bottom: 9px;
+    }
+  }
+  &__slogan {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--sltxt-color);
+    margin-bottom: 15px;
+  }
+  &__call {
+    font-size: 11px;
+    line-height: 17px;
+    text-align: center;
+    color: var(--sltxt-color);
+    margin-bottom: 22px;
+  }
+  &__list {
+    margin-left: 18px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+
+  &__link {
+    width: 133px;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 3px 15px;
+    color: var(--link-color);
+  }
+  &__link--red {
+    width: 105px;
+    height: 24px;
+    color: var(--white-color);
+    background-color: var(--red-color);
+  }
+}

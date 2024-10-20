@@ -1,0 +1,119 @@
+.feedback {
+  padding-top: 26px;
+
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--ttrev-color);
+  padding-bottom: 44px;
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 44px;
+  }
+  &__list {
+    margin-bottom: 117px;
+  }
+  &__item {
+    position: relative;
+    padding: 9px 0px;
+    border-bottom: 0.4px solid var(--black-color);
+  }
+
+  &__guestions {
+    position: relative;
+    font-size: 12px;
+    line-height: 17px;
+    color: var(--black-color);
+    background-image: url(../images/mob/arrbott.svg);
+    background-position: 285px 6px;
+    background-size: 11px;
+    background-repeat: no-repeat;
+  }
+
+  &__guestions:hover {
+    background-image: url(../images/mob/arrtop.svg);
+    background-repeat: no-repeat;
+    background-position: 285px 6px;
+
+    background-size: 11px;
+  }
+
+  &__text-hidden {
+    font-size: 10px;
+    line-height: 14px;
+    color: var(--black-color);
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+  &__text {
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 27px;
+    color: var(--black-color);
+  }
+  &__list-link {
+    margin-left: 6px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  &__link {
+    width: 133px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 3px 15px;
+    color: var(--link-color);
+  }
+  &__link--red {
+    width: 105px;
+    height: 24px;
+    color: var(--white-color);
+    background-color: var(--red-color);
+  }
+}
+#menu #list {
+  height: 0;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
+  background: #d5d5d5;
+}
+
+#menu:hover #list {
+  height: auto;
+
+  transition: max-height 0.25s ease-in;
+}
+#two #second {
+  height: 0;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
+  background: #d5d5d5;
+}
+
+#two:hover #second {
+  height: auto;
+  transition: max-height 0.25s ease-in;
+}
+#three #thirds {
+  height: 0;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
+  background: #d5d5d5;
+}
+
+#three:hover #thirds {
+  height: auto;
+  transition: max-height 0.25s ease-in;
+}
+#four #fourth {
+  height: 0;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
+  background: #d5d5d5;
+}
+
+#four:hover #fourth {
+  height: auto;
+  transition: max-height 0.25s ease-in;
+}

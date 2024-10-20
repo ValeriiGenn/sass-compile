@@ -1,0 +1,164 @@
+.advantages {
+  display: block;
+  width: 375px;
+  height: 911px;
+  padding-top: 30px;
+  background-color: var(--name-color);
+
+  &--overlay {
+    background-image: url(../images/mob/Vector-min.png),
+      url(../images/mob/Vectorgr-min.png), url(../images/mob/Vectorgrl-min.png),
+      url(../images/mob/Vectorsir-min.png),
+      url(../images/mob/Vectorblbotlef-min.png),
+      url(../images/mob/Vectorbotsir-min.png), url(../images/mob/G5-min.png),
+      url(../images/mob/G10-min.png), url(../images/mob/G11-min.png),
+      url(../images/mob/G8-min.png), url(../images/mob/G7-min.png),
+      url(../images/mob/Vec39-min.png), url(../images/mob/Vec40-min.png),
+      url(../images/mob/G6-min.png), url(../images/mob/G9-min.png),
+      url(../images/mob/yelbot-min.png), url(../images/mob/Vectorgrbot-min.png),
+      url(../images/mob/Vyelltop-min.png), url(../images/mob/Veyelr-min.png),
+      url(../images/mob/blutopright-min.png),
+      url(../images/mob/blubottrigth-min.png);
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 304px, 0px 829px,
+      80px 804px, 342px 780px, 292px 826px, 318px 826px, 314px 780px,
+      340px 816px, 335px 816px, 328px 798px, 364px 804px, 277px 795px,
+      189px 796px, 0px 292px, 316px 0px, 267px 487px, 257px 0px, 173px 409px;
+    background-repeat: no-repeat;
+  }
+  /*@media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 375px) and (min-resolution: 192dpi),
+    screen and (min-width: 375px) and (min-resolution: 2dppx) {
+    background-image: url(../images/mob/Vector-min.png),
+      url(../images/mob/Vectorgr2-min.png),
+      url(../images/mob/Vectorgrl2-min.png),
+      url(../images/mob/Vectorsir2-min.png),
+      url(../images/mob/Vectorblbotlef2-min.png),
+      url(../images/mob/Vectorbotsir2-min.png), url(../images/mob/G52-min.png),
+      url(../images/mob/G102-min.png), url(../images/mob/G112-min.png),
+      url(../images/mob/G82-min.png), url(../images/mob/G72-min.png),
+      url(../images/mob/Vec392-min.png), url(../images/mob/Vec402-min.png),
+      url(../images/mob/G62-min.png), url(../images/mob/G92-min.png),
+      url(../images/mob/yelbot2-min.png),
+      url(../images/mob/Vectorgrbot2-min.png),
+      url(../images/mob/Vyelltop2-min.png), url(../images/mob/Veyelr2-min.png),
+      url(../images/mob/blutopright2-min.png),
+      url(../images/mob/blubottrigth2-min.png),
+      linear-gradient(
+        180deg,
+        var(--name-color) 59%,
+        var(--white-color) 59%,
+        var(--white-color)
+      );
+  }*/
+
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--white-color);
+
+  &__span {
+    color: var(--span-color);
+  }
+  /* &__container {
+    
+   
+  }*/
+  &__overlay {
+    width: 375px;
+    height: 911px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 60px;
+  }
+  &__one {
+    position: relative;
+    margin-bottom: 47px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 19px;
+      left: 0;
+      top: -24px;
+      background-image: url(../images/mob/01.-min.png);
+      background-repeat: no-repeat;
+      border-bottom: 2px solid var(--black-color);
+    }
+  }
+  &__two {
+    position: relative;
+    //font-size: 14px;
+    margin-bottom: 30px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 19px;
+      height: 22px;
+      left: 0;
+      top: -25px;
+      background-image: url(../images/mob/02.-min.png);
+      background-repeat: no-repeat;
+      border-bottom: 2px solid var(--black-color);
+    }
+  }
+  &__three {
+    position: relative;
+    //font-size: 14px;
+    margin-bottom: 30px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 22px;
+      left: 0;
+      top: -25px;
+      background-image: url(../images/mob/03.-min.png);
+      background-repeat: no-repeat;
+      border-bottom: 2px solid var(--black-color);
+    }
+  }
+  &__four {
+    position: relative;
+    margin-bottom: 35px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 19px;
+      height: 22px;
+      left: 0;
+      top: -25px;
+      background-image: url(../images/mob/04.-min.png);
+      background-repeat: no-repeat;
+      border-bottom: 2px solid var(--black-color);
+    }
+  }
+  &__five {
+    position: relative;
+    //font-size: 14px;
+    margin-bottom: 46px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 18px;
+      height: 22px;
+      left: 0;
+      top: -25px;
+      background-image: url(../images/mob/05.-min.png);
+      background-repeat: no-repeat;
+      border-bottom: 2px solid var(--black-color);
+    }
+  }
+  &__subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 13px;
+  }
+  &__text {
+    margin-bottom: 23px;
+  }
+}

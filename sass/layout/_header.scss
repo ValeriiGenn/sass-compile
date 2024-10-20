@@ -1,0 +1,532 @@
+.header {
+    padding-top: 31px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__honors{display: flex;}
+    &__btn {
+        // border: 1px solid rgba(0, 0, 0, 0.2);
+        //position: absolute;
+        //width: 26px;
+        //height: 10px;
+        //right: 50px;
+        //top: 40px;
+        background-color: var(--white-color);
+        //background-image: linear-gradient( 180deg, #fa3465 0px, #fa3465 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 2px, #fa3465 2px, #fa3465 3px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0) 4px, #fa3465 4px, #fa3465 5px);
+        //background: linear-gradient( 0deg, #fa3465 0px, #fa3465 1px, , 2px#fa3465 2px, #fa3465 3px);
+        border-radius: 2px;
+        /*display: flex;
+        @media screen and (min-width: 1200px) {
+            display: none;
+        }
+        @media screen and (min-width: 768px) {
+            margin-left: 291px;
+            background-color: transparent;
+        }
+        border: none;
+        background-color: var(--white-color);*/
+    }
+    &__nav {
+        display: flex;
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 84px;
+        }
+        justify-content: space-between;
+        align-items: center;
+        &--list {
+            display: none;
+            @media screen and (min-width: 1200px) {
+                display: flex;
+            }
+        }
+        &--item:not(:last-child) {
+            margin-right: 35px;
+        }
+        &--link {
+            font-family: DM Sans;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 21px;
+            display: flex;
+            align-items: center;
+            color: var(--white-color);
+        }
+        &--link:hover,
+         :focus {
+            color: var(--abprvw-color);
+            background-color: var(--bgheher-color);
+        }
+    }
+    /*&__duplicate {
+        position: absolute;
+        width: 306px;
+        height: 82px;
+        left: 188px;
+        top: 140px;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 135%;
+        
+        text-align: center;
+        text-shadow: 0 0 0 white;
+        
+        color: transparent;
+        text-transform: uppercase;
+        mix-blend-mode: hard-light;
+        opacity: 0.7;
+        //border: 0.8px solid #ffffff;
+        background-image: url(../images/mob/Rectangle13-min.png);
+    }*/
+    &__navbtn {
+        @media screen and (min-width: 768px) {
+            margin-left: 30px;
+            width: 160px;
+            height: 44px;
+            background: var(--white-color);
+            border-radius: 22px;
+            border: none;
+            font-family: DM Sans;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 21px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--abprvw-color);
+        }
+        @media screen and (min-width: 1200px) {
+            width: 160px;
+            margin-left: 0;
+            margin-right: 78px;
+        }
+        display: none;
+    }
+    &__navbtn :hover,
+     :focus {
+        color: var(--abprvw-color);
+        background-color: var(--bgfcs-color);
+    }
+    &__filter {
+        @media screen and (min-width: 768px) {
+            margin-bottom: 66px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-left: 78px;
+        }
+    }
+}
+
+
+/*background-color: var(--bgheher-color);
+    background-size: 346px;
+    background-repeat: no-repeat;
+    @media screen and (min-width: 768px) {
+        height: 399px;
+        padding-top: 37px;
+    }
+    @media screen and (min-width: 1200px) {
+        height: 665px;
+        padding-top: 37px;
+        background-size: 538px;
+        padding-left: 46px;
+    }
+    padding-top: 6px;
+    height: 502px;
+    position: relative;
+    overflow: hidden;
+    &__container {
+        position: relative;
+        z-index: 0;
+        height: 100%;
+        &::before {
+            animation: animate10 5000ms infinite 2000ms;
+            transform-origin: bottom bottom;
+            content: "";
+            display: inline-block;
+            position: absolute;
+            @media screen and (min-width: 768px) {
+                animation: animate11 2500ms infinite 2000ms;
+                transform-origin: bottom bottom;
+                width: 324px;
+                height: 322px;
+                left: 307px;
+                top: 6px;
+                background-image: url(../images/Ellburgtabm.svg);
+                background-repeat: no-repeat;
+            }
+            @media screen and (min-width: 1200px) {
+                width: 538px;
+                height: 538px;
+                left: 450px;
+                top: 14px;
+                background-image: url(../images/Ellburgtabm.svg);
+                background-size: 538px;
+            }
+            width: 346px;
+            height: 344px;
+            right: -19%;
+            bottom: 75px;
+            z-index: -1;
+            background-image: url(../images/Ellherom.svg);
+            background-repeat: no-repeat;
+        }
+        &::after {
+            animation: animate15 5000ms infinite 2000ms;
+            transform-origin: bottom center;
+            content: "";
+            position: absolute;
+            z-index: -1;
+            @media screen and (min-width: 768px) {
+                animation: animate16 2500ms infinite 2000ms;
+                transform-origin: bottom center;
+                width: 143px;
+                height: 336px;
+                background-image: url(../images/compr768/ice-burger-1x-min.png);
+                left: 378px;
+                top: 26px;
+            }
+            @media screen and (min-width: 1200px) {
+                width: 236px;
+                height: 557px;
+                left: 570px;
+                top: 90px;
+                background-image: url(../images/compr1280/ice-burger-1x-min.png);
+            }
+            width: 171px;
+            height: 410px;
+            right: 12px;
+            bottom: 0;
+            background-image: url(../images/compr480/ice-burger-1x-min.png);
+            background-repeat: no-repeat;
+        }
+    }
+    
+    &__wrapper-wrap {
+        margin-bottom: 19px;
+        @media screen and(min-width: 1200px) {
+            margin-top: 20px;
+        }
+    }
+    &__title {
+        font-family: Titan One;
+        font-size: 22px;
+        line-height: 25px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--white-color);
+        @media screen and(min-width: 1200px) {
+            font-size: 38px;
+            line-height: 44px;
+        }
+        &--first {
+            font-family: Titan One;
+            font-size: 34px;
+            line-height: 90.5%;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--abprvw-color);
+            @media screen and(min-width: 1200px) {
+                font-size: 58px;
+            }
+        }
+    }
+    &__wrapper {
+        @media screen and (min-width: 768px) {
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-left: 78px;
+            margin-right: 60px;
+        }
+    }
+    &__number-list {
+        @media screen and (min-width: 768px) {
+            font-family: Titan One;
+            font-size: 28px;
+            line-height: 32px;
+            text-align: right;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--abprvw-color);
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 46px;
+            line-height: 53px;
+            h3 {
+                margin-bottom: 10px;
+            }
+        }
+        z-index: 3;
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            display: none;
+        }
+    }
+    &__number-item {
+        position: relative;
+    }
+    &__number-item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    &__number-item::before {
+        z-index: -1;
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: -3px;
+        right: -8px;
+        background-image: url(../images/Elwit1m.svg);
+        background-repeat: no-repeat;
+        @media screen and(min-width: 1200px) {
+            top: -6px;
+            right: -16px;
+            width: 30px;
+            height: 30px;
+            background-size: 30px;
+        }
+    }
+    &__number-text {
+        font-family: DM Sans;
+        font-size: 8px;
+        line-height: 10px;
+        text-align: right;
+        text-transform: none;
+        color: var(--white-color);
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 18px;
+            //width: 74px;
+            height: 18px;
+        }
+        @media screen and (min-width: 320px) and (max-width: 767) {
+            display: none;
+        }
+    }
+   
+    &__filter--list {
+        display: flex;
+    }
+    &__button--red {
+        min-width: 62.4px;
+        height: 24px;
+        border-radius: 12px;
+        border: none;
+        font-family: DM Sans;
+        font-size: 8px;
+        line-height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--abprvw-color);
+        color: var(--white-color);
+        margin-right: 8px;
+        @media screen and (min-width: 1200px) {
+            min-width: 102px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 14px;
+            line-height: 18px;
+            margin-right: 17px;
+        }
+    }
+    &__button--white {
+        min-width: 82.8px;
+        height: 24px;
+        border-radius: 12px;
+        border: none;
+        font-family: DM Sans;
+        font-size: 8px;
+        line-height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--white-color);
+        color: var(--abprvw-color);
+        @media screen and (min-width: 1200px) {
+            min-width: 138px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+    &__wrap {
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            display: none;
+        }
+        @media screen and (min-width: 768px) {
+            margin-left: 120px;
+            width: 114px;
+            position: relative;
+            &::before {
+                content: "";
+                display: block;
+                width: 124px;
+                height: 126px;
+                position: absolute;
+                top: -35px;
+                left: -120px;
+                background-image: url(../images/compr768/milk-1x-min.png);
+                background-repeat: no-repeat;
+            }
+            @media screen and (min-width: 1200px) {
+                margin-left: 249px;
+                width: 200px;
+                //position: relative;
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 188px;
+                    height: 191px;
+                    position: absolute;
+                    top: -35px;
+                    left: -210px;
+                    background-image: url(../images/compr1280/milk-1x-min.png);
+                    background-repeat: no-repeat;
+                }
+            }
+            &--button {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 18px;
+                height: 18px;
+                border-radius: 9px;
+                border: none;
+                background-color: var(--white-color);
+                @media screen and (min-width: 1200px) {
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 13px;
+                }
+            }
+            &--button-icon {
+                width: 8px;
+                height: 8px;
+                fill: var(--abprvw-color);
+            }
+            &::after {
+                content: "";
+                display: block;
+                width: 168px;
+                height: 133px;
+                position: absolute;
+                top: -25px;
+                left: 425px;
+                background-image: url(../images/compr768/ice-girl-1x-min.png);
+                background-repeat: no-repeat;
+                @media screen and (min-width: 1200px) {
+                    width: 293px;
+                    height: 232px;
+                    top: -25px;
+                    left: 570px;
+                    background-image: url(../images/compr1280/ice-girl-1x-min.png);
+                }
+            }
+        }
+        &--text {
+            @media screen and (min-width: 768px) {
+                font-family: DM Sans;
+                font-size: 8px;
+                line-height: 150%;
+                margin-bottom: 7px;
+                color: var(--white-color);
+            }
+            @media screen and (min-width: 1200px) {
+                font-size: 14px;
+                line-height: 140%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@keyframes animate10 {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(0.85);
+    }
+    75% {
+        transform: scale(0.95);
+    }
+    90% {
+        transform: scale(1);
+    }
+    95% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes animate11 {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes animate15 {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.7);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+    90% {
+        transform: scale(1);
+    }
+    95% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes animate16 {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}*/

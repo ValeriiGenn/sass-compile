@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "-": "^0.0.1",
+    "ansi": "^0.3.1",
+    "gulp": "^5.0.0",
+    "regex": "^4.3.3",
+    "save-dev": "^0.0.1-security"
+  }
+}

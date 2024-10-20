@@ -1,0 +1,174 @@
+.about {
+  padding-bottom: 71px;
+  background: var(--white-color);
+  text-align: left;
+  &__container {
+    background-image: url(../images/mob/Ellipse39-min.png),
+      url(../images/mob/Ellipse34-min.png),
+      url(../images/mob/Rectangle50-min.png),
+      url(../images/mob/Ellipse37-min.png),
+      url(../images/mob/Rectangle49-min.png),
+      url(../images/mob/MGgreenblack.svg), url(../images/mob/Ellipse35-min.png),
+      url(../images/mob/Rectangle51-min.png),
+      url(../images/mob/Ellipse43-min.png), url(../images/mob/Ellipse42-min.png),
+      url(../images/mob/Ellipse39-1.svg), url(../images/mob/Ellipse40.svg),
+      url(../images/mob/Rectangle53.svg), url(../images/mob/Rectangle54.svg),
+      url(../images/mob/Ellipse41.svg);
+    background-position: 326px 17px, 269px 83px, 326px 83px, 326px 159px,
+      326px 150px, 280px 211px, 326px 210px, 326px 210px, 282px 287px,
+      293px 287px, 319px 328px, 319px 383px, 319px 328px, 319px 383px,
+      319px 439px;
+    background-repeat: no-repeat;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 31px;
+      //height: 31px;
+      right: 10px;
+      bottom: -30px;
+      background-image: url(../images/icons/Ellipse44m.svg);
+      background-repeat: no-repeat;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    //text-align: left;
+    color: var(--endtxt-color);
+    margin-bottom: 7px;
+  }
+  &__preface {
+    width: 276px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    color: var(--prfctxt-color);
+    margin-bottom: 11px;
+    &--span {
+      color: var(--blue-color);
+    }
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    color: var(--prfctxt-color);
+    margin-bottom: 14px;
+    &--span {
+      width: 267px;
+    }
+  }
+  &__text-span {
+    width: 236px;
+  }
+  &__question {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--endtxt-color);
+    margin-bottom: 11px;
+  }
+  &__content {
+    width: 183px;
+    position: relative;
+    padding-top: 4px;
+    padding-left: 6px;
+    margin-left: 63px;
+    margin-bottom: 32px;
+    background-image: url(../images/mob/Rectangle56-min.png);
+    background-repeat: no-repeat;
+  }
+  &__wrap {
+    @media screen and (min-width: 1200px) {
+      width: 463px;
+    }
+    position: absolute;
+    width: 176px;
+    left: 21px;
+    bottom: -16px;
+    padding-left: 10px;
+    background-color: var(--white-color);
+  }
+  &__image {
+    width: 171px;
+  }
+  &__img {
+    width: 142px;
+  }
+  &__name {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 16px;
+    color: var(--name-color);
+  }
+  &__signature {
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 176%;
+      margin-bottom: 35px;
+    }
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 136%;
+    color: var(--black-color);
+  }
+  &__list {
+    position: relative;
+    display: flex;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 31px;
+      height: 16px;
+      right: -11px;
+      bottom: -47px;
+      background-image: url(../images/icons/Ellipse44m.svg);
+      background-repeat: no-repeat;
+    }
+  }
+  &__item {
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  &__card {
+    width: 142px;
+  }
+  &__wrapp {
+    position: absolute;
+    width: 153px;
+    left: 3px;
+    bottom: -28px;
+    padding-left: 9px;
+    background-color: var(--white-color);
+  }
+  /*&__button {
+        @media screen and (min-width: 768px) {
+            margin: 0 auto;
+        }
+        display: inline-block;
+        text-align: center;
+        min-width: 176px;
+        height: 44px;
+        background: var(--white-color);
+        border-radius: 22px;
+        padding: 7px 14px;
+        margin-left: 20px;
+        margin-top: (--abprvw-color);
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        color: var(--abprvw-color);
+        background-color: var(--white-color);
+        border: none;
+    }
+    &__btn--icon {
+        margin-left: 13px;
+        display: inline-block;
+        width: 7px;
+        height: 10px;
+    }*/
+}

@@ -1,0 +1,99 @@
+.reviews {
+  padding-top: 30px;
+  padding-bottom: 48px;
+  &__container {
+    position: relative;
+    background-image: url(../images/mob/Ellipse38.svg),
+      url(../images/mob/Ellipse62.svg);
+    background-position: 272px 27px, 247px 27px;
+    background-repeat: no-repeat;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 65px;
+      height: 65px;
+      right: 0px;
+      top: -38px;
+      background-image: url(../images/mob/Ell55-min.png),
+        url(../images/mob/Ell56-min.png), url(../images/mob/Ell57-min.png),
+        url(../images/mob/Ell58-min.png), url(../images/mob/Ell59-min.png),
+        url(../images/mob/Ell60-min.png), url(../images/mob/Ell61-min.png),
+        url(../images/mob/Rectangle59.svg);
+      background-position: 49px 52px, 45px 48px, 42px 44px, 37px 40px, 32px 35px,
+        27px 29px, 21px 22px, 0px 0px;
+      transform: rotate(90deg);
+      background-repeat: no-repeat;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 65px;
+      height: 65px;
+      right: 0px;
+      top: 75px;
+      background-image: url(../images/mob/Ell55-min.png),
+        url(../images/mob/Ell56-min.png), url(../images/mob/Ell57-min.png),
+        url(../images/mob/Ell58-min.png), url(../images/mob/Ell59-min.png),
+        url(../images/mob/Ell60-min.png), url(../images/mob/Ell61-min.png),
+        url(../images/mob/Rectangle59.svg);
+      background-position: 48px 52px, 44px 48px, 41px 44px, 37px 40px, 32px 35px,
+        27px 29px, 21px 22px, 0px 0px;
+      transform: rotate(180deg);
+      background-repeat: no-repeat;
+    }
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 61px;
+    color: var(--ttrev-color);
+  }
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__wrapp {
+    width: 217px;
+    height: 257px;
+    padding: 8px 5px 6px;
+    //margin-right: 25px;
+    //margin-left: 25px;
+    margin: 0 25px 30px;
+    background-color: var(--name-color);
+  }
+  &__svg {
+    fill: var(--white-color);
+  }
+  &__icn {
+    width: 6px;
+    height: 1px;
+  }
+  &__image {
+    width: 207px;
+    height: 243px;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background-color: var(--name-color);
+    &--left {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 6px;
+    }
+  }
+}

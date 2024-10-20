@@ -1,0 +1,142 @@
+.gallery {
+  max-width: 100%;
+  display: block;
+  //background-image: linear-gradient(#fff5f6 40%, #fff 40%, #fff 0);
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 78px;
+  background-image: url(../images/mob/Ellipse77.svg),
+    url(../images/mob/Ellipse78.svg), url(../images/mob/Ellipse79.svg),
+    url(../images/mob/Recgle50.svg), url(../images/mob/Rectangle51.svg);
+  background-position: 99px 581px, 158px 581px, 277px 581px, 277px 581px,
+    320px 523px;
+  background-size: 60px, 119px, 54px, 62px, 59px;
+  background-repeat: no-repeat;
+  &__container {
+    position: relative;
+    &::before {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      width: 44px;
+      height: 44px;
+      left: 10px;
+      top: 291px;
+      background-image: url(../images/mob/MGreenyellou.svg);
+      background-repeat: no-repeat;
+      background-size: 44px;
+      opacity: 0.8;
+      //transform: rotate(-116.46deg);
+    }
+
+    &::after {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      width: 70px;
+      height: 70px;
+      left: 8px;
+      bottom: -48px;
+      background-image: url(../images/mob/MGgreenblack.svg);
+      background-repeat: no-repeat;
+      background-size: 70px;
+      opacity: 0.8;
+      transform: rotate(-116.46deg);
+    }
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+
+    margin-bottom: 26px;
+    color: var(--ttrev-color);
+  }
+  /*&__container {
+        width: 364px;
+       
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+            padding: 0 115px;
+        }
+    }*/
+  &__list {
+    display: flex;
+    margin-right: -9px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: -190px;
+      //margin-right: -115px;
+    }
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 9px;
+      margin-bottom: 9px;
+    }
+  }
+  //&__picture {
+  // }
+  &__image {
+    &--one {
+      width: 182px;
+      height: 263px;
+    }
+    &--twoo {
+      width: 104px;
+      height: 82px;
+    }
+    &--three {
+      width: 104px;
+      height: 82px;
+    }
+    &--four {
+      width: 104px;
+      height: 82px;
+    }
+    &--five {
+      width: 182px;
+      height: 117px;
+    }
+    &--six {
+      width: 104px;
+      height: 117px;
+    }
+    &--seven,
+    &--eight,
+    &--nine {
+      width: 92px;
+      height: 85px;
+    }
+  }
+  &__wrap {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 44px;
+      height: 44px;
+      left: 116px;
+      bottom: 68px;
+      background-image: url(../images/mob/MGsiryellou.svg);
+      background-repeat: no-repeat;
+      background-size: 29px;
+      opacity: 0.8;
+    }
+  }
+
+  &__wrap-item {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+  &__wrapp-list {
+    display: flex;
+  }
+  &__wrapp-item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

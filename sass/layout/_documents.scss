@@ -1,0 +1,50 @@
+.documents {
+  //padding: 63px 10px 82px;
+  padding-top: 63px;
+  padding-bottom: 82px;
+  background-image: url(../images/mob/Ellipse35-min.png),
+    url(../images/mob/Rectangle51-min.png), url(../images/mob/Ellipse39-1.svg),
+    url(../images/mob/Rectangle53.svg), url(../images/mob/Ellipse40.svg),
+    url(../images/mob/Rectangle54.svg), url(../images/mob/Ellipse41.svg),
+    url(../images/mob/Ellipse43-min.png), url(../images/mob/Ellipse42-min.png),
+    url(../images/mob/MGyellgreenrotat.svg), url(../images/mob/Ellipse77.svg),
+    url(../images/mob/Rectangle51.svg), url(../images/mob/Ellipse75.svg),
+    url(../images/mob/Rectangle51.svg), url(../images/mob/Ellipse37-min.png),
+    url(../images/mob/Ellipse44.svg), url(../images/mob/Rectangle50.svg);
+  background-position: 270px -4px, 270px -4px, 326px 58px, 326px 58px,
+    326px 106px, 326px 106px, 326px 154px, 265px 232px, 294px 232px, 33px 238px,
+    0px 282px, 0px 328px, 71px 371px, 0px 395px, 46px 395px, 6px 441px,
+    0px 441px;
+  background-repeat: no-repeat;
+  &__wrap {
+    padding: 8px;
+    width: 275px;
+    height: 166px;
+    margin: 0 10px 60px;
+
+    border: 2px solid var(--brdr-color);
+  }
+  &__image {
+    width: 255px;
+    height: 146px;
+  }
+  &__wrapp {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    &:nth-child(even) {
+      margin-top: 38px;
+    }
+    &:not(:last-child) {
+      margin-right: 1px;
+    }
+  }
+  &__img {
+    width: 54px;
+    height: 76px;
+  }
+}
