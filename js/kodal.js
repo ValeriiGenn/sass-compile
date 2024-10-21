@@ -1,4 +1,4 @@
-(() => {
+/*(() => {
     const refs = {
         openKodalBtn: document.querySelector("[data-kodal-open]"),
         closeKodalBtn: document.querySelector("[data-kodal-close]"),
@@ -11,4 +11,4 @@
     function toggleKodal() {
         refs.kodal.classList.toggle("is-hidden");
     }
-})();
+})();*/

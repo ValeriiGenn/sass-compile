@@ -1,4 +1,4 @@
-var modal = document.getElementById("mobModal");
+/*var modal = document.getElementById("mobModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("mobBtn");
@@ -21,4 +21,4 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-};
+};*/
