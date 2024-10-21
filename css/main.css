@@ -210,8 +210,98 @@ body {
   }
 }
 
-/*@import "./layout/hero";
-@import "./layout/contacts";
+.hero {
+  padding-top: 46px;
+  padding-bottom: 101px;
+  width: 375px;
+  margin: 0 auto;
+}
+.hero__overlay {
+  margin: 0 auto;
+}
+.hero__container {
+  position: relative;
+  text-align: center;
+  width: 306px;
+  margin-left: 33px;
+}
+.hero__container::after {
+  position: absolute;
+  content: "";
+  width: 55px;
+  height: 31px;
+  right: 10px;
+  bottom: -104px;
+  background-image: url(../images/icons/MaskGroupm.svg);
+  background-repeat: no-repeat;
+}
+.hero__container::before {
+  position: absolute;
+  content: "";
+  width: 55px;
+  height: 31px;
+  right: 10px;
+  bottom: -80px;
+  background-image: url(../images/icons/MaskGrouptopm.svg);
+  background-repeat: no-repeat;
+}
+.hero__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 43px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px var(--h1-color);
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 -16px 0 var(--shadtitle-color);
+  margin-bottom: 63px;
+  background-image: url(../images/mob/prapor-ukraine.png), url(../images/mob/red-black-min.png), url(../images/mob/Ellipse14-min.png);
+  background-position: 0px 0px, 152px 0px, 311px 102px;
+  background-repeat: no-repeat;
+}
+.hero__title--end {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 116%;
+  text-align: center;
+  color: var(--endtxt-color);
+  margin-bottom: 9px;
+}
+.hero__slogan {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--sltxt-color);
+  margin-bottom: 15px;
+}
+.hero__call {
+  font-size: 11px;
+  line-height: 17px;
+  text-align: center;
+  color: var(--sltxt-color);
+  margin-bottom: 22px;
+}
+.hero__list {
+  margin-left: 18px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.hero__link {
+  width: 133px;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 3px 15px;
+  color: var(--link-color);
+}
+.hero__link--red {
+  width: 105px;
+  height: 24px;
+  color: var(--white-color);
+  background-color: var(--red-color);
+}
+
+/*@import "./layout/contacts";
 @import "./layout/about";
 @import "./layout/advantages";
 @import "./layout/continuation";
