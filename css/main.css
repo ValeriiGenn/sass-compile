@@ -312,8 +312,51 @@ body {
   background-color: var(--red-color);
 }
 
-/*@import "./layout/contacts";
-@import "./layout/about";
+/*.container {
+    padding-bottom: 40px;
+}*/
+.filter__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-top: -15px;
+  margin-left: -8px;
+}
+@media screen and (min-width: 768px) {
+  .filter__list {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+.filter__list--btn {
+  margin-left: 8px;
+  margin-top: 15px;
+}
+.filter__list--button {
+  min-width: 73px;
+  list-style: none;
+  border-radius: 5px;
+  padding: 6px 22px;
+  font: inherit;
+  color: var(--abprvw-color);
+  background-color: var(--advbg-color);
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filter__list--button:hover, .filter__list--button:focus {
+  background-color: var(--accent-color);
+  box-shadow: 5px 5px 5px 5px var(--gray-color);
+  color: var(--white-color);
+}
+
+/*@import "./layout/about";
 @import "./layout/advantages";
 @import "./layout/continuation";
 @import "./layout/biography";
