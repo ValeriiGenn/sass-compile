@@ -4,13 +4,15 @@
   width: 375px;
   margin: 0 auto;
   //height: 220px;
-  &__overlay {
+  background-image: url(../images/mob/prapor-ukraine.png),
+      url(../images/mob/red-black-min.png), url(../images/mob/Ellipse14-min.png);
+    background-position: 0px 0px, 152px 0px, 311px 102px;
+    background-repeat: no-repeat;
+    opacity: 0, 5;&__overlay {
     margin: 0 auto;
     // position: relative;
-    
+  
       
-    
-    
   }
   &__container {
     position: relative;
@@ -26,7 +28,7 @@
       height: 31px;
       right: 10px;
       bottom: -104px;
-      background-image: url(../images/icons/MaskGroupm.svg);
+     // background-image: url(../images/icons/MaskGroupm.svg);
       background-repeat: no-repeat;
     }
     &::before {
@@ -36,7 +38,7 @@
       height: 31px;
       right: 10px;
       bottom: -80px;
-      background-image: url(../images/icons/MaskGrouptopm.svg);
+     // background-image: url(../images/icons/MaskGrouptopm.svg);
       background-repeat: no-repeat;
     }
   }
@@ -50,10 +52,9 @@
     -webkit-text-fill-color: transparent;
     text-shadow: 0 -16px 0 var(--shadtitle-color);
     margin-bottom: 63px;
-    background-image: url(../images/mob/prapor-ukraine.png),
-        url(../images/mob/red-black-min.png), url(../images/mob/Ellipse14-min.png);
-    background-position: 0px 0px, 152px 0px, 311px 102px;
-        background-repeat: no-repeat;
+    background-image: url(../images/mob/trizub1-mob.png);
+      background-position: 0px 0px;
+      background-repeat: no-repeat;
         &--end {
       font-weight: 600;
       font-size: 16px;

@@ -215,6 +215,10 @@ body {
   padding-bottom: 101px;
   width: 375px;
   margin: 0 auto;
+  background-image: url(../images/mob/prapor-ukraine.png), url(../images/mob/red-black-min.png), url(../images/mob/Ellipse14-min.png);
+  background-position: 0px 0px, 152px 0px, 311px 102px;
+  background-repeat: no-repeat;
+  opacity: 0, 5;
 }
 .hero__overlay {
   margin: 0 auto;
@@ -232,7 +236,6 @@ body {
   height: 31px;
   right: 10px;
   bottom: -104px;
-  background-image: url(../images/icons/MaskGroupm.svg);
   background-repeat: no-repeat;
 }
 .hero__container::before {
@@ -242,7 +245,6 @@ body {
   height: 31px;
   right: 10px;
   bottom: -80px;
-  background-image: url(../images/icons/MaskGrouptopm.svg);
   background-repeat: no-repeat;
 }
 .hero__title {
@@ -255,8 +257,8 @@ body {
   -webkit-text-fill-color: transparent;
   text-shadow: 0 -16px 0 var(--shadtitle-color);
   margin-bottom: 63px;
-  background-image: url(../images/mob/prapor-ukraine.png), url(../images/mob/red-black-min.png), url(../images/mob/Ellipse14-min.png);
-  background-position: 0px 0px, 152px 0px, 311px 102px;
+  background-image: url(../images/mob/trizub1-mob.png);
+  background-position: 0px 0px;
   background-repeat: no-repeat;
 }
 .hero__title--end {
